@@ -13,3 +13,6 @@ age = input("enter age: ")
 
 print(fname + " is " + age + " years old")
 
+nums = [3,5,7]
+
+print(nums)
