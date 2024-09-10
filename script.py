@@ -21,12 +21,27 @@ nums = [3, 5, 7]
 
 # if statements
 
-age = int(input("Enter age: "))
+# age = int(input("Enter age: "))
 
-if age < 0:
-    print("not a valid age")
-elif age > 0:
-    print("valid age")
-else:
-    print("age is 0")
+# if age < 0:
+#     print("not a valid age")
+# elif age > 0:
+#     print("valid age")
+# else:
+#     print("age is 0")
 
+# lists
+
+grades = ['a', 'x', 'c', 'z', 'e']
+grades.append('w')
+# print(grades)
+grades.sort()
+# print(grades)
+
+# sets
+my_set = {1,4,5,6,7}
+my_set.add(9)
+my_set.remove(5)
+print(my_set)
+
+print(f"my set has {len(my_set)} values")
