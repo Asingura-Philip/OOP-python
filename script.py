@@ -42,6 +42,32 @@ grades.sort()
 my_set = {1,4,5,6,7}
 my_set.add(9)
 my_set.remove(5)
-print(my_set)
+# print(my_set)
 
-print(f"my set has {len(my_set)} values")
+# print(f"my set has {len(my_set)} values")
+
+# loops
+
+#list loops
+"""
+for i in [0,1,2,3,4]:
+    print(i)
+
+
+numbers = ['a','b','c','d','e']
+
+for i in numbers:
+    print(i)
+
+"""
+
+# dict loops
+
+my_dict = {
+    'name':"jafferson",
+    'age': 19,
+    'occupation': "painter",
+}
+
+for key,value in my_dict.items():
+    print(key,value)
