@@ -62,7 +62,7 @@ for i in numbers:
 """
 
 # dict loops
-
+"""
 my_dict = {
     'name':"jafferson",
     'age': 19,
@@ -71,3 +71,33 @@ my_dict = {
 
 for key,value in my_dict.items():
     print(key,value)
+
+"""
+
+#functions
+"""
+def add(x,y):
+    return x+y
+
+# print(add(4,5))
+
+def greet(name):
+    print(f"Good morning {name}")
+
+greet('polin')
+"""
+
+# classes
+
+class Person():
+    def __init__(self,name,age,occupation):
+        self.name = name
+        self.age = age
+        self.occupation = occupation
+
+person1 = Person("lino",45,"farmer")
+
+print(person1.name)
+    
+
+
