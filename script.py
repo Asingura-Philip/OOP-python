@@ -97,7 +97,22 @@ class Person():
 
 person1 = Person("lino",45,"farmer")
 
-print(person1.name)
+# print(person1.name)
+
+def divide(x,y):
+    return x/y
+
+# print(divide(0,3))
+
+# print(1//2)
+
+x = int(input())
+y = int(input())
+ 
+x = x // y
+y = y // x
+ 
+print(y)
     
 
 
