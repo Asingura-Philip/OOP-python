@@ -106,13 +106,17 @@ def divide(x,y):
 
 # print(1//2)
 
-x = int(input())
-y = int(input())
+# x = int(input())
+# y = int(input())
  
-x = x // y
-y = y // x
+# x = x // y
+# y = y // x
  
-print(y)
+# print(y)
     
+x = 4
+print(x)
+del x
+print(x)
 
 
