@@ -115,8 +115,19 @@ def divide(x,y):
 # print(y)
     
 x = 4
-print(x)
+# print(x)
 del x
-print(x)
+# print(x)
 
 
+# find the largest of three numbers entered by the user
+num1 = input('enter first number: ')
+num2 = input('enter second number: ')
+num3 = input('enter third number: ')
+
+if num1 > num2 and num1 > num3:
+    print('first number is the biggest')
+elif num2 > num1 and num2 > num3:
+    print('second number is the biggest') 
+elif num3 > num2 and num3 > num1:
+    print('third number is the biggest')
