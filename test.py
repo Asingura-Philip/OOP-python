@@ -6,3 +6,10 @@ def add(a,b):
 
 # calc
 
+print('enter first number')
+number1 = input()
+print('enter second number')
+number2 = input()
+
+sum = number1 + number2
+print(f"the sum is {sum}")
