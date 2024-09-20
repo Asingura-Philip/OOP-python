@@ -7,9 +7,9 @@ def add(a,b):
 # calc
 
 print('enter first number')
-number1 = input()
+number1 = int(input())
 print('enter second number')
-number2 = input()
+number2 = int(input())
 
 sum = number1 + number2
 print(f"the sum is {sum}")
