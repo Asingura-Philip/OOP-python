@@ -5,7 +5,9 @@ def add(a,b):
 
 
 # calc
-
+print('welcome to the calculator')
+print('select options')
+print('1.add\n 2.subtract')
 print('enter first number')
 number1 = int(input())
 print('enter second number')
