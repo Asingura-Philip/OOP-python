@@ -25,3 +25,10 @@ elif option == 2:
     difference = number1 - number2
     print(f"the difference is {difference}")
 
+elif option == 3:
+    print('enter first number')
+    number1 = int(input())
+    print('enter second number')
+    number2 = int(input())
+    difference = number1 * number2
+    print(f"the difference is {difference}")
