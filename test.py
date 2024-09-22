@@ -7,7 +7,7 @@ def add(a,b):
 # calc
 print('welcome to the calculator')
 print('select options')
-print('1.add\n 2.subtract')
+print('1.add\n 2.subtract\n 3.multiply')
 option = int(input())
 if option == 1:
     print('enter first number')
@@ -30,5 +30,5 @@ elif option == 3:
     number1 = int(input())
     print('enter second number')
     number2 = int(input())
-    difference = number1 * number2
-    print(f"the difference is {difference}")
+    product = number1 * number2
+    print(f"the product is {product}")
