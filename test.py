@@ -40,3 +40,5 @@ elif option == 4:
     number2 = int(input())
     quotient = number1 / number2
     print(f"the quotient is {quotient}")
+else:
+    print('unknown request')
