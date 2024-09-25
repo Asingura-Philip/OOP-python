@@ -42,3 +42,15 @@ elif option == 4:
     print(f"the quotient is {quotient}")
 else:
     print('unknown request')
+
+# using functions
+
+print('enter num1')
+num1 = int(input())
+print('enter num2')
+num2 = int(input())
+
+def sum(a,b):
+    return a + b
+
+print(sum(num1,num2))
