@@ -53,4 +53,7 @@ num2 = int(input())
 def sum(a,b):
     return a + b
 
+def sub(a,b):
+    return a - b
+
 print(sum(num1,num2))
