@@ -60,5 +60,5 @@ def times(a,b):
     return a * b
 
 print(sum(num1,num2))
-print(sum(num1,num2))
+print(sub(num1,num2))
 print(times(num1,num2))
