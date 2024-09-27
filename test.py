@@ -61,3 +61,4 @@ def times(a,b):
 
 print(sum(num1,num2))
 print(sum(num1,num2))
+print(times(num1,num2))
