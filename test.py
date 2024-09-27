@@ -56,5 +56,8 @@ def sum(a,b):
 def sub(a,b):
     return a - b
 
+def times(a,b):
+    return a * b
+
 print(sum(num1,num2))
 print(sum(num1,num2))
