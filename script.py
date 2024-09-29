@@ -20,6 +20,11 @@ my_function()
 # print(x)
 
 # lambda
+
+add = lambda x, y: x + y
+print(add(2, 3))  # Output: 5
+
+
 numbers = [1, 2, 3, 4, 5, 6]
 evens = list(filter(lambda x: x % 2 == 0, numbers))
 print(evens)  # Output: [2, 4, 6]
