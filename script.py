@@ -23,3 +23,8 @@ my_function()
 numbers = [1, 2, 3, 4, 5, 6]
 evens = list(filter(lambda x: x % 2 == 0, numbers))
 print(evens)  # Output: [2, 4, 6]
+
+tuples = [(1, 'one'), (2, 'two'), (3, 'three')]
+sorted_tuples = sorted(tuples, key=lambda x: x[1])
+print(sorted_tuples)  # Output: [(1, 'one'), (3, 'three'), (2, 'two')]
+
