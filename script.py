@@ -22,14 +22,24 @@ my_function()
 # lambda
 
 add = lambda x, y: x + y
-print(add(2, 3))  # Output: 5
+# print(add(2, 3))  # Output: 5
 
 
 numbers = [1, 2, 3, 4, 5, 6]
 evens = list(filter(lambda x: x % 2 == 0, numbers))
-print(evens)  # Output: [2, 4, 6]
+# print(evens)  # Output: [2, 4, 6]
 
 tuples = [(1, 'one'), (2, 'two'), (3, 'three')]
 sorted_tuples = sorted(tuples, key=lambda x: x[1])
-print(sorted_tuples)  # Output: [(1, 'one'), (3, 'three'), (2, 'two')]
+# print(sorted_tuples)  # Output: [(1, 'one'), (3, 'three'), (2, 'two')]
 
+
+class Dog:
+    def __init__(self,age, breed):
+        self.age = age
+        self.breed = breed
+    
+dog1 = Dog(14,"lab")
+
+print(dog1.age)
+    
