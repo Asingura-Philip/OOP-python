@@ -43,6 +43,21 @@
 
 # # print(dog1.age)
 
-gy = 9
-print(f"{gy:05d}")
+# gy = 9
+# print(f"{gy:05d}")
+
+
+# class to roll dice
+
+# import random
+
+# class Dice:
+#     def __init__(self,num):
+#         self.num = num
+#     def roll():
+#         randomNum = random.randint(1,6)
+#         return randomNum
+
+
+
     
