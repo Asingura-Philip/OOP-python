@@ -55,4 +55,10 @@ def display_info(car):
 def drive(car, distance):
     car['mileage'] += distance
 
+# What differences did you notice between the OOP and procedural implementations?
+# The OOP implemantation allows for code reusablility with inheretance while the procedural appraoch doesnt allow for that 
 
+# How does OOP provide benefits like modularity, reusability, and maintainability compared to procedural programming?
+# Modularity allows for the same code a task to be broken down into small parts
+# reusablity is seen through inheritance 
+# maintainability is an advantage because the code can be modified and added to without affecting its functionality
