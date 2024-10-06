@@ -14,13 +14,13 @@ class Car:
         
 
 
-# car1 = Car("toyota","d3",2008,15000)
-# car2 = Car("mercedes","yd3",2008,5230)
-# car3 = Car("ford","CT3",2008,50000)
+car1 = Car("toyota","d3",2008,15000)
+car2 = Car("mercedes","yd3",2008,5230)
+car3 = Car("ford","CT3",2008,50000)
 
-# car1.display_info()
-# car2.display_info()
-# car3.display_info()
+car1.display_info()
+car2.display_info()
+car3.display_info()
 
 
 car4 = Car("Bentley","e4",2019,50000)
@@ -62,3 +62,60 @@ def drive(car, distance):
 # Modularity allows for the same code a task to be broken down into small parts
 # reusablity is seen through inheritance 
 # maintainability is an advantage because the code can be modified and added to without affecting its functionality
+
+
+
+
+# QN 5
+# # ASSIGNMENT TASK
+# Assignment Task: StudentManagement class with methods for adding, updating, and deleting 
+# students, use exception handling where needed.
+
+class StudentManagement:
+    def __init__(self):
+        self.students = {} 
+
+    def add_student(self, student_id, name, age):
+        if student_id in self.students:
+            print("Student ID already exists.")
+            return
+        
+        if age < 0:
+            print("Age must be a positive number.")
+            return
+        
+        self.students[student_id] = {'name': name, 'age': age}
+        print("Added student:", name)
+
+    def update_student(self, student_id, name=None, age=None):
+        if student_id not in self.students:
+            print("Student ID not found.")
+            return
+        
+        if name:
+            self.students[student_id]['name'] = name
+        if age is not None:
+            if age < 0:
+                print("Age must be a positive number.")
+                return
+            self.students[student_id]['age'] = age
+        
+        print("Updated student:", self.students[student_id])
+
+    def delete_student(self, student_id):
+        if student_id not in self.students:
+            print("Student ID not found.")
+            return
+        
+        del self.students[student_id]
+        print("Deleted student with ID:", student_id)
+
+    def display_students(self):
+        if not self.students:
+            print("No students found.")
+            return
+        
+        for student_id in self.students:
+            student = self.students[student_id]
+            print("ID:", student_id, "Name:", student['name'], "Age:", student['age'])
+
