@@ -46,3 +46,13 @@ class ElectricCar(Car):
 
 
 # Qn 4- Rewite using procedural programming
+def create_car(brand, model, year, mileage):
+    return {"brand": brand, "model": model, "year": year, "mileage": mileage}
+
+def display_info(car):
+    print(f"{car['year']} {car['brand']} {car['model']}, Mileage: {car['mileage']} miles")
+
+def drive(car, distance):
+    car['mileage'] += distance
+
+
