@@ -7,8 +7,11 @@ class Student:
     def __init__(self,name,age):
         self.name = name
         self.age = age
+        Student.num_students += 1
 
 student1 = Student("gojo",30)
 student2 = Student("geto",29)
+student3 = Student("toji",24)
 
-print(student1.class_year)
+print(Student.class_year)
+print(Student.num_students)
