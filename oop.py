@@ -13,5 +13,32 @@ student1 = Student("gojo",30)
 student2 = Student("geto",29)
 student3 = Student("toji",24)
 
-print(Student.class_year)
-print(Student.num_students)
+# print(Student.class_year)
+# print(Student.num_students)
+
+# inheritance
+
+class Animal:
+    def __init__(self,name):
+        self.name = name
+        self.is_alive = True
+    def eat(self):
+        print(f"{self.name} is eating")
+    
+    def sleep(self):
+        print(f"{self.name} is sleeping")
+
+class Dog(Animal):
+    pass
+class Cat(Animal):
+    pass
+class Mouse(Animal):
+    pass
+
+dog = Dog("bolt")
+cat = Cat("tom")
+mouse = Mouse("jerry")
+
+print(dog.name)
+cat.eat()
+mouse.sleep()
