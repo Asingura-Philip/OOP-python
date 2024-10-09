@@ -45,3 +45,24 @@ mouse = Mouse("jerry")
 # print(dog.name)
 # cat.eat()
 # mouse.sleep()
+
+# multiple inheritance
+class Predator:
+    def hunt(self):
+        print("this animal is hunting")
+
+class Prey:
+    def flee(self):
+        print("this animal is fleeing")
+
+
+class Rabbit(Prey):
+    pass
+class Hawk(Predator):
+    pass
+class Fish(Predator,Prey):
+    pass
+
+fish = Fish()
+fish.hunt()
+fish.flee()
