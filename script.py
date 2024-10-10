@@ -59,5 +59,19 @@
 #         return randomNum
 
 
+# decorators
 
-    
+
+
+def icing(func):
+    def wrapper():
+        print("icing on cake")
+        func()
+    return wrapper()
+
+@icing
+def bake():
+    print("bake cake")
+
+
+bake()
