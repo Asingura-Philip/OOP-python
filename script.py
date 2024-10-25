@@ -75,3 +75,18 @@ def bake():
 
 
 bake()
+
+
+def my_decorator(func):
+  def wrapper(*args, **kwargs):
+    print("Before calling:", func.__name__)
+    func(*args, **kwargs)
+    print("After calling:", func.__name__)
+  return wrapper
+
+@my_decorator
+def greet(name): 
+
+  print("Hello,", name)
+
+greet("jane")
